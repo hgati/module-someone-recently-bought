@@ -48,7 +48,7 @@ class GenerateFakeProducts
             $_cron = $this->_scopeConfig->getValue(self::CRON_PATH);
             $_product_ids = $this->_scopeConfig->getValue(self::CONFIG_PATH);
             if(!empty($_product_ids) && empty($_cron)) {
-                $this->_logger->info('Hgati_SomeoneRecentlyBought:: product_ids가 수동으로 설정되어있어서 패스합니다.');
+                $this->_logger->info('Hgati_SomeoneRecentlyBought:: product_ids are manually set, so pass on this.');
                 return;
             }
 
@@ -77,7 +77,7 @@ class GenerateFakeProducts
                 $this->_logger->info("Hgati_SomeoneRecentlyBought:: Fake ProductIds:: $values");
             }
 
-            $this->_logger->info('Hgati_SomeoneRecentlyBought:: Finish fake products');
+            $this->_logger->info('Hgati_SomeoneRecentlyBought:: finished fake products');
         } catch (\Exception $e) {
             $this->_logger->error('Error in cron job: ' . $e->getMessage());
         }
