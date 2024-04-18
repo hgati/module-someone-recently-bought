@@ -1,4 +1,4 @@
-# Someone recently bought a ~ (Small Popup)
+# Someone recently bought a ~ (Magento 2.4.6-p4)
 - It display a small pop-up message periodically on the frontend's homepage, saying 'Someone recently ~ purchased"
 - fake order / real order
 
