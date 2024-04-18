@@ -14,7 +14,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     )
     {
         parent::__construct($context);
-        $this->configModule = $this->getConfig(strtolower($this->_getModuleName()));
+        $this->configModule = $this->getConfig('hgati_someone_recently_bought');
     }
 
     public function getConfig($cfg='')
