@@ -41,7 +41,7 @@ define([
 
 	      	var methods = {
 		        init : function() {
-					var closedNoti = getCookie('hgati_noti_closed');
+					var closedNoti = getCookie('hgati_someone_closed');
 					if (closedNoti) return;
 
 			        return this.each(function() {
@@ -53,7 +53,7 @@ define([
 		            var el  = suggest.find('.notify-slider-wrapper');
 		            suggest.find('.x-close').click(function() {
 		                suggest.addClass('close');
-						setCookie('hgati_noti_closed', 'true', 1); // 1 day expired
+						setCookie('hgati_someone_closed', 'true', 1); // 1 day expired
 		            });
 		            var slideCount    = suggest.find('.slider >.item').length;
 		            var slideWidth    = suggest.find('.slider >.item').width();
