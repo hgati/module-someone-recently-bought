@@ -5,8 +5,8 @@
             <general>
                 <enabled>1</enabled>
                 <fakeinfo>1</fakeinfo>
-                <product_ids>26238,26236,26193,26186,26174,26176,26130,26191,26104,26101</product_ids>
-                <faketime>a few minutes ago, 5 minutes ago, 25 minutes ago, 4 hours ago, 7 hours ago, 9 hours ago, 11 hours ago</faketime>
+                <product_ids>1,2,3,4,5,6,7,8,9,10</product_ids>
+                <faketime>a few minutes ago, 8 minutes ago, 25 minutes ago, 43 minutes ago, 3 hours ago, 7 hours ago, 9 hours ago, 11 hours ago</faketime>
                 <fakeaddress>Dallas - United States, Los Angeles - United States, Pittsburgh - United States, Denver - United States, Oakland - United States, City:  Sevgein - Switzerland, Lausanne -Switzerland, Sion - Switzerland, Kuala Lumpur - Malaysia, Kulai - Malaysia, Maastricht - Netherlands, Tilburg - Netherlands, Sevenum - Netherlands, HØnefoss - Norway, KolsÅ - Norway, Hanoi - VN, Ottawa - Canada, Ugglebarnby - United Kingdom, Aprilville - New Zealand, Los Verdugo - Spain, Friedrichsdorf - Germany, Sainte-marie - France, Umbai - Malaysia, Sydney - Australia, Amsterdam - Netherlands</fakeaddress>
                 <fakecron>0</fakecron>
                 <limit>10</limit>
