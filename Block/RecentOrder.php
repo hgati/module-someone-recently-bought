@@ -114,13 +114,15 @@ class RecentOrder extends \Magento\Catalog\Block\Product\AbstractProduct
         $producIds = array();
         $fakeIds = $this->getConfig('general/product_ids');
         if($fakeIds){
-            $producIds   = explode(',', $fakeIds);
+            $producIds   = explode(',', $fakeIds); shuffle($producIds);
             $faketime    = explode(',', $this->getConfig('general/faketime'));
             $fakeaddress = explode(',', $this->getConfig('general/fakeaddress'));
             foreach ( $producIds as $key => $id ) {
                 $info = array();
-                $info['time'] = isset($faketime[$key]) ? $faketime[$key]: $faketime[array_rand($faketime)];
-                $address = isset($fakeaddress[$key]) ? $fakeaddress[$key]: $fakeaddress[array_rand($fakeaddress)];
+                //$info['time'] = isset($faketime[$key]) ? $faketime[$key]: $faketime[array_rand($faketime)];
+                $info['time'] = $faketime[array_rand($faketime)];
+                //$address = isset($fakeaddress[$key]) ? $fakeaddress[$key]: $fakeaddress[array_rand($fakeaddress)];
+                $address = $fakeaddress[array_rand($fakeaddress)];
                 $info['address'] = __('from %1', $address);
                 $this->_orderInfo[$id] = $info;
             }
