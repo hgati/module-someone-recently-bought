@@ -8,12 +8,5 @@ php bin/magento setup:upgrade
 php bin/magento setup:static-content:deploy -f
 ```
 
-- Store > Configuration > Hgati > Someone Recently Bought
-
-![](README-system-config.png)
-
-- Screen On Mobile
-
-![](README-frontend-mobile.png)
 
 
