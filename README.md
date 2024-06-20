@@ -1,6 +1,5 @@
-# Someone recently bought a ~ (Magento 2.4.6-p5)
+# Someone recently bought a ~
 - It display a small pop-up message periodically on the frontend's homepage, saying 'Someone recently ~ purchased"
-- fake order / real order
 
 ```
 composer require hgati/module-someone-recently-bought:dev-master
